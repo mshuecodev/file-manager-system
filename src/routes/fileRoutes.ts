@@ -11,6 +11,6 @@ router.post("/create-directory", fileController.createDirectory)
 router.post("/move-file/:fileName", fileController.moveFileToDirectory)
 router.post("/rename-file/:fileName", fileController.renameFile)
 
-router.post("/move-to-trash/:fileName", fileController.moveToTrash)
+router.delete("/move-to-trash/:fileName", fileController.moveToTrash)
 
 export default router
